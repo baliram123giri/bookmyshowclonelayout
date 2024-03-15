@@ -1,0 +1,7 @@
+.b_service_box{
+    opacity: 0.5;
+}
+
+.b_service_box:hover{
+    opacity: 1;
+}
