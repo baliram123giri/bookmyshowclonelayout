@@ -5,3 +5,7 @@
 .b_service_box:hover{
     opacity: 1;
 }
+
+.b_span_link span{
+    font-size: 11px;
+}

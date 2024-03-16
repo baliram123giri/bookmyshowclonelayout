@@ -3,7 +3,9 @@
 .b_bg_red_light_color {
     background: #F84464;
 }
-
+.b_text_grey_light_color {
+    color: #6E6D70;
+}
 h1,
 h2,
 h3,
@@ -153,4 +155,7 @@ input::placeholder {
 }
 .b_bg_dark_light{
     background: #404043;
+}
+.b_bg_dark_light2{
+    background: #333338;
 }

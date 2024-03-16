@@ -22,8 +22,8 @@ export const Services = () => {
         <section className="b_bg_dark_light text-white">
             <div className="container py-2">
                 <div className="row">
-                    {data.map((value) => {
-                        return <div className="col-12 col-md-4 text-center b_service_box">
+                    {data.map((value, index) => {
+                        return <div key={index} className="col-12 col-md-4 text-center b_service_box">
                             {value.icon}
                             <p className="b_h12 roboto-light mt-1">{value.title}</p>
                         </div>

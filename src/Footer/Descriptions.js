@@ -31,9 +31,9 @@ export const Descriptions = () => {
 
     return (
         <section className="container my-3">
-            {data.map((value, index, arr) => {
+            {data.map((value, index) => {
                 return (
-                    <div>
+                    <div key={index}>
                         <h6 className="text-muted b_h14">
                             {value.title}
                         </h6>
