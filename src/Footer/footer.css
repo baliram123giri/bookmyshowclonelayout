@@ -1,11 +1,49 @@
-.b_service_box{
+.b_service_box {
     opacity: 0.5;
 }
 
-.b_service_box:hover{
+.b_service_box:hover {
     opacity: 1;
 }
 
-.b_span_link span{
+.b_span_link span {
     font-size: 11px;
+}
+
+.b_bookmyshow_border {
+    border-top: 1px solid #868686;
+    width: 96%;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.b_bottom_logo {
+    top: -80% !important;
+}
+
+footer .b_icons {
+    width: 35px;
+    height: 35px;
+    background: #868686;
+    color: #333338;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer .b_icons:hover {
+    background: #fff;
+}
+
+.b_copyright {
+    width: 97%;
+    margin:  auto;
+    padding: 15px 0px;
+}
+
+.b_copyright p {
+    margin: 0;
 }

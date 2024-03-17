@@ -17,7 +17,7 @@ export const MenuLinks = () => {
                 {data.map((value, index) => {
                     return (
                         <div key={index} className="my-2">
-                            <h6>{value.title.toUpperCase()}</h6>
+                            <h6 className="b_h13">{value.title.toUpperCase()}</h6>
                             <div className="b_span_link  fw-light">
                                 {value.links.map((ele, index) => {
                                     // if (index === 0) {
