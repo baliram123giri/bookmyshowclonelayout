@@ -12,6 +12,9 @@ body::-webkit-scrollbar{
 .b_bg_red_light_color {
     background: #F84464;
 }
+.b_text_red_light_color {
+    color: #F84464;
+}
 
 .b_text_grey_light_color {
     color: #6E6D70;
@@ -176,4 +179,7 @@ input::placeholder {
 
 .b_bg_dark_light2 {
     background: #333338;
+}
+.row{
+    margin: 0;
 }

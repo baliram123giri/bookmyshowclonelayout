@@ -1,7 +1,8 @@
-
+import 'react-accessible-accordion/dist/fancy-example.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./Header";
-import { Movies } from "./Pages/Movies";
+import { Movies } from "./Pages/Movies/Movies";
 import { Stream } from "./Pages/Stream";
 import { Events } from "./Pages/Events";
 import { Plays } from "./Pages/Plays";
