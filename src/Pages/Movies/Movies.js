@@ -3,7 +3,32 @@ import { Carousel } from "react-responsive-carousel";
 import "./movies.css";
 import { FilterComp } from "../../Components/Filter/FilterComp";
 import { AppliedFilters } from "../../Components/Filter/AppliedFilters";
+import { Button } from "../../Components/Buttons/Button";
+import { HeadingBanner } from "../../Components/Banners/HeadingBanner";
+import { MyCard } from "../../Components/Card/MyCard";
 const carouselData = ["first_banner.avif", "second_banner.avif"];
+
+const moviesData = [
+    {
+        movieName: "Yodha",
+        movieCertificate: "UA",
+        language: "Hindi",
+        src: "movies/et00318073-vnxhzuzaak-portrait.avif",
+    },
+    {
+        movieName: "Shaitaan",
+        movieCertificate: "UA",
+        language: "Hindi",
+        src: "movies/poster2.avif",
+    },
+    {
+        movieName: "Unn Sawali",
+        movieCertificate: "UA",
+        language: "Marathi",
+        src: "movies/poster3.avif",
+    },
+];
+
 export const Movies = () => {
     const data = [
         {
@@ -51,14 +76,34 @@ export const Movies = () => {
                     {/* //left  */}
                     <div className="col-12 col-md-3 ps-0">
                         <h4>Filters</h4>
-                        {data.map((value) => {
-                            return <FilterComp key={value.title} buttons={value.buttons} title={value.title} />
+                        {data.map((value, index) => {
+                            return (
+                                <FilterComp
+                                    key={value.title}
+                                    buttons={value.buttons}
+                                    title={value.title}
+                                />
+                            );
                         })}
-
+                        <Button btnType="outline" title={"Browse by Cinemas"} />
                     </div>
                     <div className="col-12 col-md-9">
                         <div>
-                            <AppliedFilters title={"Movies in Selu"} buttons={["Hindi", "Marathi", "Thriller"]} />
+                            <AppliedFilters
+                                title={"Movies in Selu"}
+                                buttons={["Hindi", "Marathi", "Thriller"]}
+                            />
+                            <div className="my-4">
+                                <HeadingBanner
+                                    title2={"Explore Upcomming Movies"}
+                                    title={"Comming Soon"}
+                                />
+                            </div>
+                            <div className="row">
+                                {moviesData.map(value => <div key={value.movieName} className="col-12 col-sm-6 col-lg-4 col-xl-3 mt-3">
+                                    <MyCard {...value} />
+                                </div>)}
+                            </div>
                         </div>
                     </div>
                 </div>
