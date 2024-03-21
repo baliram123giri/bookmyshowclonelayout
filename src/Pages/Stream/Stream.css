@@ -1,0 +1,41 @@
+.b_promoted_banners_main {
+    background-size: cover !important;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.b_promoted_banners_main_forground {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    background: linear-gradient(95deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.b_promoted_banners_main_forground .b_img_box{
+    height: 440px;
+    width: 100%;
+    padding: 15px;
+}
+.b_promoted_banners_main_forground .b_img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.b_promoted_banners_main_forground  .b_description{
+    line-height: 25px;
+}
+
+.b_promoted_banners_main_forground .b_play_icon{
+    width: 20px;
+    height: 20px;
+    background: #F84464;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b_promoted_banners_main_forground .b_premiere{
+   letter-spacing: 1px;
+   font-weight: 400;
+}

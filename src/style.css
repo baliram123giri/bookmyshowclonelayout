@@ -34,7 +34,9 @@ h6 {
     color: #F84464 !important;
     border: 1px solid #F84464 !important;
 }
-
+.b_bg_dark{
+    background-color: #1f253bb6;
+}
 .b_red_light_border {
     border: 1px solid #F84464 !important;
 }
