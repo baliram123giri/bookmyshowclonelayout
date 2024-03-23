@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import { Header } from "./Header";
 import { Movies } from "./Pages/Movies/Movies";
 import { Stream } from "./Pages/Stream/Stream";
-import { Events } from "./Pages/Events";
+import { Events } from "./Pages/Events/Events";
 import { Plays } from "./Pages/Plays";
 import { Sports } from "./Pages/Sports";
 import { Activites } from "./Pages/Activites";

@@ -10,21 +10,21 @@ const carouselData = ["first_banner.avif", "second_banner.avif"];
 
 const moviesData = [
     {
-        movieName: "Yodha",
-        movieCertificate: "UA",
-        language: "Hindi",
+        name: "Yodha",
+        title1: "UA",
+        description: "Hindi",
         src: "movies/et00318073-vnxhzuzaak-portrait.avif",
     },
     {
-        movieName: "Shaitaan",
-        movieCertificate: "UA",
-        language: "Hindi",
+        name: "Shaitaan",
+        title1: "UA",
+        description: "Hindi",
         src: "movies/poster2.avif",
     },
     {
-        movieName: "Unn Sawali",
-        movieCertificate: "UA",
-        language: "Marathi",
+        name: "Unn Sawali",
+        title1: "UA",
+        description: "Marathi",
         src: "movies/poster3.avif",
     },
 ];
@@ -100,7 +100,7 @@ export const Movies = () => {
                                 />
                             </div>
                             <div className="row">
-                                {moviesData.map(value => <div key={value.movieName} className="col-12 col-sm-6 col-lg-4 col-xl-3 mt-3">
+                                {moviesData.map(value => <div key={value.name} className="col-12 col-sm-6 col-lg-4 col-xl-3 mt-3">
                                     <MyCard {...value} />
                                 </div>)}
                             </div>
