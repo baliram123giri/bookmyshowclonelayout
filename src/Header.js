@@ -2,7 +2,7 @@ import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
-import {  NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 export const Header = () => {
     return (
         <header>
@@ -68,16 +68,16 @@ export const Header = () => {
                         <div className="col-12 col-md-3 ">
                             <ul className="d-flex gap-3 justify-content-end">
                                 <li>
-                                    <span>ListYourShow</span>
+                                    <NavLink to={"/list-your-shows"} ><span>ListYourShow</span></NavLink>
                                 </li>
                                 <li>
-                                    <span>Corporates</span>
+                                    <NavLink to={"/corporates"} ><span>Corporates</span></NavLink>
                                 </li>
                                 <li>
-                                    <span>Offers</span>
+                                    <NavLink to={"/offers"} ><span>Offers</span></NavLink>
                                 </li>
                                 <li>
-                                    <span>Gift Cards</span>
+                                    <NavLink to={"/git-card"} ><span>Gift Cards</span></NavLink>
                                 </li>
                             </ul>
                         </div>

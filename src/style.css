@@ -3,6 +3,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background: #F5F5F5 !important;
 }
 
 body::-webkit-scrollbar {
@@ -20,7 +21,11 @@ body::-webkit-scrollbar {
 .b_text_grey_light_color {
     color: #6E6D70;
 }
-
+.b_sticky {
+    position: sticky;
+    height: max-content;
+    top: 0px;
+}
 h1,
 h2,
 h3,
