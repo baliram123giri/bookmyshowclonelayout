@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+
+import { Carousel } from "./Carousel";
 
 export const Shows = () => {
     return (
-        <div>Shows</div>
-    )
-}
+        <section className="b_shows">
+            <div className="my-3">
+                <Carousel />
+            </div>
+        </section>
+    );
+};
