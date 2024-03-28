@@ -1,13 +1,13 @@
 import React from 'react'
 import { BsExclamationCircle } from "react-icons/bs";
-const ShowsCards = ({ imgPath, title }) => {
+const ShowsCards = ({ imgPath, title, background = "#FCF1F1" }) => {
     return (
-        <div className='b_shows_card'>
+        <div style={{ background }} className='b_shows_card text-center'>
             <div className='b_shows_card_img'>
                 <img src={imgPath} alt="" />
             </div>
             <h4>{title}</h4>
-            <BsExclamationCircle  size={25} className='b_text_red_light_color'/>
+            <BsExclamationCircle size={25} className='b_text_red_light_color' />
         </div>
     )
 }
